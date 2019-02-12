@@ -1,0 +1,23 @@
+commit 765934fdf4de1364570c83f46e56bfeec95ae2a4 (HEAD -> master)
+Author: student <emailby>
+Date:   Tue Feb 12 22:33:47 2019 +0300
+
+    add .gitignore
+
+commit af27cd7249d95c857743d47db179e06cb23e3ab7 (origin/master)
+Author: student <emailby>
+Date:   Tue Feb 12 22:00:45 2019 +0300
+
+    add.gitignore
+
+commit 15621de18407d8a7921ff3fd005c48ac70151073
+Author: student <emailby>
+Date:   Tue Feb 12 21:58:11 2019 +0300
+
+    add .gitignore
+
+commit fa511a9d1530857a452d39d98fdcc89f05128421
+Author: student <emailby>
+Date:   Tue Feb 12 21:56:23 2019 +0300
+
+    add .gitignore
