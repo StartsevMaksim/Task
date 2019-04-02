@@ -32,13 +32,12 @@ var photoPosts=[
 	author: "author5",
 	createdDate: new Date('2019-03-01T19:00:00'),
 	description: "Stars",
-	photo: "photo5",
+	photo: "photo5.jpg",
 },
 ];
 (function(){
-	function getPhotoPosts (skip, top){
-		var postsArray=[];
-		postsArray=photoPosts;
+	function getPhotoPosts (skip, top, filterAuthor){
+		var postsArray=photoPosts.slice();
 		postsArray.splice(0, +skip);
 		postsArray.splice(+top, postsArray.length-(+top));
 		postsArray.sort(comparator);
@@ -106,21 +105,33 @@ var photoPosts=[
 		return false;
 	}
 	function showInformation (res){
-		alert(res.id+"  "+res.author+"  "+res.createdDate+"  "+res.description+"  "+res.photo);
+		console.log(res.id+"  "+res.author+"  "+res.createdDate+"  "+res.description+"  "+res.photo);
 	};
 	function showArray(array){
 		for (var i=0; i<array.length; i++){
 			showInformation(array[i]);
 		}
 	}
-	editPhotoPost("1", {description: "Desert", photo: "desert.jpg"});
 	showArray(photoPosts);
-	var post={
-		id: "6",
-		author: "author6",
-		createdDate: new Date('2019-04-01T19:00:00'),
-		description: "River",
-		photo: "photo6",
-	}
-
+	console.log("");
+	var res1=getPhotoPost("2");
+	showInformation(res1);
+	console.log("");
+	var res3=validatePhotoPost(photoPosts[2]);
+	console.log(res3);
+	console.log("");
+	editPhotoPost("3", {description: "Desert", photo: "desert.jpg"});
+	showArray(photoPosts);
+	console.log("");
+	var res2=getPhotoPosts(2, 3, null);
+	showArray(res2);
+	console.log("");
+	removePhotoPost("2");
+	showArray(photoPosts);
+	console.log("");
+	var res4=addPhotoPost({ id: "6", author: "author5", createdDate: new Date('2019-04-01T19:00:00'), description: "River", photo: "photo6.jpg",});
+	console.log(res4);
+	console.log("");
+	showArray(photoPosts);
+	console.log("");
 }())
