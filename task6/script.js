@@ -180,29 +180,6 @@ var photos=[
 },
 ];
 
-var addPhotos=[
-{
-	id: "6",
-	author: "author6",
-	createdDate: new Date('2019-03-22T09:00:00'),
-	description: "Sky",
-	photo: "photo6.jpg",
-},
-{
-	id: "7",
-	author: "author7",
-	createdDate: new Date('2019-05-01T18:00:00'),
-	description: "City",
-	photo: "photo7.jpg",
-},
-{
-	id: "8",
-	author: "author8",
-	createdDate: new Date('2019-04-14T22:00:00'),
-	description: "Islands",
-	photo: "photo8.jpg",
-},
-]
 
 var p=[];
 
@@ -211,11 +188,11 @@ for (var i=0; i<photos.length; i++){
 	pl.add(photos[i]);
 }
 pl.remove("1");
-pl.edit("5", {description: "Relax", photo: "photo9.jpg",});
+pl.edit("2", {description: "Sky", photo: "photo9.jpg",});
 
-let v=new View();
-v.logIn();
-v.logOut();
+let view=new View();
+view.logIn();
+view.logOut();
 
 function comparator (post1, post2){
 	if (post1.createdDate.getTime()>post2.createdDate.getTime()){

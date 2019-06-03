@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Edit</title>
+	<link rel="stylesheet" type="text/css" href="edit.css">
+	<script src="view.js"></script>
+	<script src="photoList.js"></script>
+	<script src="edit.js"></script>
+</head>
+<body>
+	<header><br><br><br></header>
+	<div class="post">	
+		<h5>EDIT POST</h5>
+		<br>
+		<h3>1. Enter ID of the post you want edit</h3>
+		<form method="post" action="" >
+			<p><input type="text" name="id"></p>
+			<br>
+			<h3>2. Choose photo to change</h3>
+			<br>
+			<p><input type="file" name="file" value="Choose file" accept="image/gif, image/jpeg"></p>
+			<br>
+			<h3>3. Change description</h3>
+			<p><textarea name="description" cols="40" rows="3"></textarea></p> 
+			<p><input type="submit" value="Save" onclick="return submitEdit(this.form.id.value, this.form.file.value, 
+				this.form.description.value)"></p>
+		</form >
+	</div>
+
+	<div class="post">	
+		<h5>REMOVE POST</h5>
+		<br>
+		<h3>1. Enter ID of the post you want remove</h3>
+		<form method="post" action="" >
+			<p><input type="text" name="id"></p>
+			<br> 
+			<p><input type="submit" value="Save" onclick="return submitRemove(this.form.id.value)"></p>
+		</form >
+	</div>
+	<footer>
+		<b>wallpapers</b>
+		<div id="info">
+			<small>
+				Startsev M. D.<br>
+				2nd course 7th group<br>
+				18.02.2019
+			</small>
+		</div>
+		<br>
+		<br>
+		<br>
+	</footer>
+</body>
+</html>

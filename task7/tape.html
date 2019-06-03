@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Wallpapers</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="view.js"></script>
+	<script src="photoList.js"></script>
+	<script src="fillLS.js"></script>
+	<script src="signin.js"></script>
+</head>
+<body>
+	<header>
+		<br>
+		<input type="button" onclick="signin()" value="Sign in">
+		<br><br><br>
+	</header>
+	<br><br><br>
+	<div id="filter" class="filt">
+			<h5>FILTER</h5><br>
+			<form>
+				<br>
+				<input type="radio" name="Sort" value="author">By Author
+				<br>
+				<br>
+				<input type="radio" name="Sort" value="description">By Description
+				<br>
+				<br>
+				<input type="submit" id="filter" name="sub" value="Filter" onclick="return submitFilter(this.form.Sort.value)">
+			</form>
+	</div>
+	<br><br>
+	<script src="script.js"></script>
+	<br>
+	<br>
+	<footer>
+		<b>wallpapers</b>
+		<div id="info">
+			<small>
+				Startsev M. D.<br>
+				2nd course 7th group<br>
+				18.02.2019
+			</small>
+		</div>
+		<br>
+		<br>
+		<br>
+	</footer>
+</body>
+</html>

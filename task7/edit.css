@@ -1,0 +1,123 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+header{
+	background-image: linear-gradient(aqua, white);
+	background-repeat: no-repeat;
+}
+
+body{
+	height: 1300px;
+	background-image: linear-gradient(aqua, white, skyblue);
+	background-repeat: no-repeat;
+}
+
+footer{
+	width: 100%;
+	position: relative;
+	top: 230px;
+	background-image: linear-gradient(aqua, white);
+	background-repeat: no-repeat;
+}
+
+#info{
+	display: inline;
+	position: absolute;
+	right: 15px;
+}
+
+b{
+	position: relative;
+	top: 20px;
+	left: 5px;
+	font-size: 20px;
+	color: purple;
+	text-transform: uppercase;
+}
+
+h5{
+	color: black;
+	font-style: italic;
+	font-size: 30px;
+	height: 50px;
+}
+
+.post {
+  position: relative;
+  margin: 100px auto 0 auto;
+  padding: 20px 20px 20px;
+  width: 500px;
+  height: 350px;
+  background: white;
+  border-radius: 3px;
+}
+
+.post:before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  bottom: -8px;
+  left: -8px;
+  z-index: -1;
+  background: rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+}
+
+.post input[type=text], .login input[type=file] {
+  width: 270px;
+}
+
+.post p.submit {
+  text-align: right;
+}
+
+input[type=file]{
+	padding: 0 18px;
+	height: 29px;
+	font-size: 12px;
+	font-weight: bold;
+	color: linear-gradient(aqua, white);
+	text-shadow: 0 1px #e3f1f1;
+	background: #cde5ef;
+	border: 1px solid;
+	border-color: #b4ccce #b3c0c8 #9eb9c2;
+	border-radius: 40px;
+	outline: 0;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+}
+
+input[type=submit] {
+  padding: 0 18px;
+  height: 29px;
+  font-size: 12px;
+  font-weight: bold;
+  color: linear-gradient(aqua, white);
+  text-shadow: 0 1px #e3f1f1;
+  background: #cde5ef;
+  border: 1px solid;
+  border-color: #b4ccce #b3c0c8 #9eb9c2;
+  border-radius: 3px;
+  outline: 0;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+input[type=text] {
+  margin: 5px;
+  padding: 0 10px;
+  width: 200px;
+  height: 34px;
+  color: #404040;
+  background: white;
+  border: 1px solid;
+  border-color: #c4c4c4 #d1d1d1 #d4d4d4;
+  border-radius: 2px;
+  outline: 5px solid #eff4f7;
+  -moz-outline-radius: 3px;
+}

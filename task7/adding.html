@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Adding</title>
+	<link rel="stylesheet" type="text/css" href="add.css">
+	<script src="view.js"></script>
+	<script src="photoList.js"></script>
+	<script src="add.js"></script>
+</head>
+<body>
+	<header></header>
+	<div class="post">	
+		<h5>ADD PHOTO</h5>
+		<br>
+		<h3>1. Choose one photo</h3>
+		<br>
+		<form method="post" action="" > 
+		<p><input type="file" name="file" value="Choose file" accept="image/gif, image/jpeg"></p>
+		<br>
+		<h3>2. Add description</h3>
+		<p><textarea name="description" cols="40" rows="3"></textarea></p> 
+		<p><input type="submit" value="Save" onclick="return submitAdding(this.form.file.value, this.form.description.value)"></p>
+		</form >
+	</div>
+	<br><br><br><br><br><br><br>
+	<footer>
+		<b>wallpapers</b>
+		<div id="info">
+			<small>
+				Startsev M. D.<br>
+				2nd course 7th group<br>
+				18.02.2019
+			</small>
+		</div>
+		<br>
+		<br>
+		<br>
+	</footer>
+</body>
+</html>
