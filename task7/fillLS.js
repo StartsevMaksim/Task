@@ -62,4 +62,7 @@ if (flag==null){
 		var elem=JSON.stringify(photos[i]);
 		localStorage.setItem(photos[i].id, elem);
 	}
+	
+	var pag=0;
+	localStorage.setItem("pagin", JSON.stringify(pag));
 }

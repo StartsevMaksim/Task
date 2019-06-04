@@ -8,6 +8,13 @@
 	height: 100px;
 	background-image: linear-gradient(dodgerblue, aqua);
 }
+
+#pag{
+	position: relative;
+	left: 10px;
+	bottom: 30px;
+}
+
 #addPhoto{
 	position: relative;
 	left: 500px;

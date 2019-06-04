@@ -30,6 +30,16 @@ function edit(){
 	window.location.assign('edit.html');
 }
 
+function pagin(){
+	var elem=localStorage.getItem('pagin');
+	var pag=JSON.parse(elem);
+	pag=+pag+5;
+	localStorage.setItem('pagin', JSON.stringify(pag));
+	
+	window.location.href='tape.html';
+	return false;
+}
+
 function submitFilter(filter){
 	flag=true;
 	localStorage.removeItem("sort");
@@ -64,7 +74,7 @@ function submitFilter(filter){
 }
 
 function comparatorAuthor (post1, post2){
-	if (post1.author>post2.author){
+	if (post1.author.toLowerCase()>post2.author.toLowerCase()){
 		return 1;
 	}
 	else {
@@ -73,7 +83,7 @@ function comparatorAuthor (post1, post2){
 }
 
 function comparatorDescription (post1, post2){
-	if (post1.description>post2.description){
+	if (post1.description.toLowerCase()>post2.description.toLowerCase()){
 		return 1;
 	}
 	else {
