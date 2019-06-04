@@ -7,7 +7,10 @@ function submitAdding(file, description){
 	list.addAll(photos.photoPosts);
 
 	var i=photos.photoPosts.length;
-	var ident=i+1;
+	var ident=1;
+	if (i!=0){
+		ident=Number(photos.photoPosts[photos.photoPosts.length-1].id)+1;
+	}
 
 	var elem2=localStorage.getItem("account");
 	var account=JSON.parse(elem2);
