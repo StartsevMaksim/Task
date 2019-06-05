@@ -21,7 +21,7 @@ else{
 	var ele=localStorage.getItem("flag");
 	var flagA=JSON.parse(ele);
 
-	if (array.photoPosts.length<userListLength){
+	if (array.photoPosts.length<userListLength+5){
 		for (var i=0; i<array.photoPosts.length; i++){
 			let view=new View();
 			if (array.photoPosts[i].author==account.login && flagA){
@@ -73,7 +73,7 @@ else if (photos!=null && flag==true && !flagSort){
 		}
 	}
 	else {
-		for (var i=0; i<photos.userListLength; i++){
+		for (var i=0; i<userListLength; i++){
 			view.viewAddAuto(photos.photoPosts[i]);
 		}
 	}
