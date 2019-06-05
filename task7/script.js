@@ -33,7 +33,7 @@ else{
 		}
 	}
 	else {
-		for (var i=0; i<userListLength; i++){
+		for (var i=0; i<userListLength+5; i++){
 			let view=new View();
 			if (array.photoPosts[i].author==account.login && flagA){
 				view.viewAddAuto(array.photoPosts[i]);
